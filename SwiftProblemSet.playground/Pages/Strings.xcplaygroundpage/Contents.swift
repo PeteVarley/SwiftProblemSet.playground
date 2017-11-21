@@ -6,7 +6,9 @@ import Foundation
 //: ## Strings
 //: ### Exercise 5
 //: Write code that tells you whether or not this string contains the substring "ham".
+
 var word = "shampoo"
+word.contains("ham")
 
 //: ### Exercise 6
 //: Declare two strings and then use a single operator to concatenate them together to create a third string.
