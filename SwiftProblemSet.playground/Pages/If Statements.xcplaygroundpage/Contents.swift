@@ -26,7 +26,6 @@ func areYouSick(){
 
 areYouSick()
 
-
 /*: 
 ### Exercise 11
 
@@ -34,6 +33,21 @@ areYouSick()
 2. Declare two bools called `finishedWork` and `gotTickets` with initial values of true or false.
 3. Write a statement such that when both `finishedWork` and `gotTickets` are true the function `goToConcert()` is called.
  */
+
+var finishedWork:Bool = true
+var gotTickets:Bool = true
+
+func goToConert() {
+    print("That vocalist is incredible!")
+}
+
+func canIGoToTheConcert(){
+    if finishedWork && gotTickets{
+        goToConert()
+    }
+}
+
+canIGoToTheConcert()
 
 /*:
 ### Exercise 12
