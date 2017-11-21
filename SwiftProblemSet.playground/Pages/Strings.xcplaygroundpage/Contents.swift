@@ -13,6 +13,10 @@ word.contains("ham")
 //: ### Exercise 6
 //: Declare two strings and then use a single operator to concatenate them together to create a third string.
 
+let string1 = "Long Beach,"
+let string2 = " California"
+let string3 = string1 + string2
+
 //: ### Exercise 7
 //: Write code that deletes all occurrences of the word "like" in the following string.
 let lottaLikes = "If like, you wanna learn Swift, like, you should build lots of small apps, cuz it's like, a good way to practice."
