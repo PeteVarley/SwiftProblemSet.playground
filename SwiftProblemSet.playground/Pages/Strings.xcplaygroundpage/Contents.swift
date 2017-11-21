@@ -21,6 +21,9 @@ let string3 = string1 + string2
 //: Write code that deletes all occurrences of the word "like" in the following string.
 let lottaLikes = "If like, you wanna learn Swift, like, you should build lots of small apps, cuz it's like, a good way to practice."
 
+let newLottaLikes = lottaLikes.replacingOccurrences(of: "like, ", with: "")
+print(newLottaLikes)
+
 //: ### Exercise 8
 //: Josie has been saving her pennies and has them all counted up. Using string interpoltaion, write code that, given a number of pennies, prints out how much money Josie has in dollars and cents.
 //: **Hint**: [The remainder operator](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/BasicOperators.html) , %, will come in handy.
