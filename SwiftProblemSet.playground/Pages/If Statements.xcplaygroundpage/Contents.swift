@@ -121,6 +121,7 @@ checkForRelease(bugs: bugs, music: hasMusic, levels: numberOfLevels)
  - If a trainee is not ready, the program should print out each element (biking, running, or both) that they cannot finish.
  - Write your if statement in the function, func `checkTrainingStatus(name: canFinishBike: canFinishRun:)`.
  */
+
 let name: String = "Teresa"
 var canFinishBike: Bool = false
 var canFinishRun: Bool = false

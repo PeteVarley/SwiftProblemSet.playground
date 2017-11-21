@@ -5,9 +5,10 @@
 //: ## Functions 
 //: ### Exercise 14
 //: The function `emojiLove` should take two `String` parameters and use them to print a `String` with  the format "stringParameterOne ❤️ stringParameterTwo".
-func emojiLove(/* add parameters here */) {
-    /* add function implementation here */
+func emojiLove(s1:String, s2:String) {
+    print(s1 + " " + "❤️" + " " + s2)
 }
+emojiLove(s1: "Mystic", s2: "Pepper")
 
 /* Example Function Call
  
