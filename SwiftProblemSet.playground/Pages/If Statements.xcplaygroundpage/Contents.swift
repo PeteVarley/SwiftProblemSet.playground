@@ -74,13 +74,32 @@ var game = "Slow adventures with Morris the Lorris"
 
 var bugs = 9
 var hasMusic = true
-var numberOfLevels = 7
+var numberOfLevels = 6
 
 func release() {
     print("\(game) is now ready for sale.")
 }
 
 func checkForRelease(bugs: Int, music: Bool, levels: Int) {
+    if bugs < 10 && hasMusic && numberOfLevels > 5 {
+        release()
+    }
+    if bugs > 10 && !hasMusic && numberOfLevels < 5 {
+        print("Your game must have less than 10 bugs, it needs music and at least 5 levels")
+        
+    } else if bugs > 10 && !hasMusic && numberOfLevels > 5 {
+        print("Your game must have less than 10 bugs, and it needs music")
+    } else if bugs > 10 && hasMusic && numberOfLevels > 5 {
+        print("Your game must have less than 10 bugs")
+    } else if bugs < 10 && !hasMusic && numberOfLevels < 5 {
+        print("Your game must have music and at least 5 levels")
+    } else if bugs > 10 && hasMusic && numberOfLevels < 5 {
+        print("Your game must have less than 10 bugs and at least 5 levels")
+    } else if bugs < 10 && !hasMusic && numberOfLevels > 5 {
+        print("Your game needs music")
+    } else if bugs < 10 && hasMusic && numberOfLevels < 5 {
+        print("Your game must have more than 5 levels")
+    }
     
 }
 
