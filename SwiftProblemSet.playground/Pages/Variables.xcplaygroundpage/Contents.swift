@@ -14,7 +14,10 @@
  - myFirstProgrammingLanguage (`String`)
  */
 
-
+var gallonsRemainingInTank: Double
+var ageOfSpecimenInWeeks: Int
+let birthplace: String
+let myFirstProgrammingLanguage: String
 
 //: ### Exercise 2
 //: Make the minimal changes necessary to fix the following compiler errors related to assignment, variables, and constants.
