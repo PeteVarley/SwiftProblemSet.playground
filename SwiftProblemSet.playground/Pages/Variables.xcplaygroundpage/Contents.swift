@@ -29,10 +29,13 @@ let bestProgrammingLanguage: String = myFirstProgrammingLanguage
 
 //: ### Exercise 3
 //: Below is some code to reverse a string. We've declared `stringToReverse` and `arrayOfCharacters` as variables. Rewrite this code to reverse a string using only constants declared with `let`, no variables. **Note**: In the new version you may use as many constants as you'd like.
-var stringToReverse = "Mutable or Immutable? That is the question."
-var arrayOfCharacters = stringToReverse.characters.reversed()
-stringToReverse = String(arrayOfCharacters)
-/*: 
+
+let stringToReverse = "Mutable or Immutable? That is the question."
+let arrayOfCharacters = stringToReverse.characters.reversed()
+let stringReversed: String
+stringReversed = String(arrayOfCharacters)
+
+/*:
 ### Exercise 4
 
  For the following descriptions, create a variable or constant that best represents it:
