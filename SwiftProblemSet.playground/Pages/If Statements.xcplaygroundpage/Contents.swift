@@ -122,11 +122,19 @@ checkForRelease(bugs: bugs, music: hasMusic, levels: numberOfLevels)
  - Write your if statement in the function, func `checkTrainingStatus(name: canFinishBike: canFinishRun:)`.
  */
 let name: String = "Teresa"
-var canFinishBike: Bool = true
-var canFinishRun: Bool = true
+var canFinishBike: Bool = false
+var canFinishRun: Bool = false
 
 func checkTrainingStatus(name: String, bike: Bool, run: Bool) {
-    //TODO: Add your if, else-if statement here!
+    if canFinishBike && canFinishRun {
+        print("\(name) is ready for the duathlon")
+    } else if !canFinishBike && canFinishRun {
+        print("\(name) cannot finish the bike portion")
+    } else if canFinishBike && !canFinishRun {
+        print("\(name) cannot finish the run portion")
+    } else {
+        print("\(name) cannot finish the bike and run portions")
+    }
 }
 
 checkTrainingStatus(name: name, bike: canFinishBike, run: canFinishRun)
