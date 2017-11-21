@@ -12,6 +12,21 @@ import Foundation
 3. Write a statement such that when `sick` is true the function `rest()` is called.
 */
 
+var sick: Bool = true
+
+func rest(){
+    print("Stay in bed.")
+}
+
+func areYouSick(){
+    if sick {
+       rest()
+    }
+}
+
+areYouSick()
+
+
 /*: 
 ### Exercise 11
 
