@@ -25,7 +25,7 @@ let lottaLikes = "If like, you wanna learn Swift, like, you should build lots of
 let newLottaLikes = lottaLikes.replacingOccurrences(of: "like, ", with: "")
 print(newLottaLikes)
 
-//: ### Exercise 9
+//: ### Exercise 8
 //: Josie has been saving her pennies and has them all counted up. Using string interpoltaion, write code that, given a number of pennies, prints out how much money Josie has in dollars and cents.
 //: **Hint**: [The remainder operator](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/BasicOperators.html) , %, will come in handy.
 
@@ -41,7 +41,12 @@ var josiesSavings = "$\(dollarAmount).\(centsAmount)"
 //: Use string interpolation to replace the X with an expression for percent monthly earnings spent on rent.
 let averageMonthlyEarnings: Float = 2500
 var averageRent: Float = 800
-var weeklyEarningsString = "On average, millenials spend X% of their income on rent."
+var percentMonthlyEarningsSpentOnRentDecimal: Float = averageRent / averageMonthlyEarnings
+var percentMonthlyEarningsSpentOnRent: Float = percentMonthlyEarningsSpentOnRentDecimal * 100
+var weeklyEarningsString = "On average, millenials spend \(percentMonthlyEarningsSpentOnRent)% of their income on rent."
+
+print(weeklyEarningsString)
+
 /*:
  ****
  [Table of Contents](Table%20of%20Contents) | [Previous](@previous) | [Next](@next)
