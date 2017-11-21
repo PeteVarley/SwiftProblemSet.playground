@@ -46,6 +46,12 @@ stringReversed = String(arrayOfCharacters)
 - a `String` value representing what a user types into the status update area.
 */
 
+var animalHungerLevelOverTime: Int
+let winningGameScore : Int
+let studentBirthday: String
+var userStatusUpdate: String
+
+
 /*:
  ****
  [Table of Contents](Table%20of%20Contents) | [Previous](@previous) | [Next](@next)
