@@ -21,9 +21,19 @@ emojiLove(s1: "Mystic", s2: "Pepper")
 
 //: ### Exercise 15
 //: The function `median` should take three `Int` parameters and return the `Int` value in the middle.
-func median(/* add parameters here */) /* define the return type */ {
-    /* add function implementation here */
+func median(num1:Int, num2:Int, num3:Int) -> Int {
+    let array = [num1,num2,num3]
+    let sortedArray = array.sorted()
+    let median = sortedArray[1]
+    return median
 }
+median(num1: 1, num2: 5, num3: 6) == 5
+median(num1: 2, num2: 1, num3: 4) == 2
+median(num1: 3, num2: 6, num3: 6) == 6
+median(num1: -10, num2: 10, num3: 0) == 0
+median(num1: 0, num2: 0, num3: 0) == 0
+median(num1: 2, num2: 3, num3: 1) == 2
+median(num1: 2, num2: 2, num3: 1) == 2
 
 /* Example Function Call
  
