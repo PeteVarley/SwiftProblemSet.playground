@@ -57,9 +57,27 @@ median(num1: 2, num2: 2, num3: 1) == 2
  
  **Note**: It is assumed that the input string is given in English.
  */
-func beginsWithVowel(/* add parameters here */) /* define the return type */ {
-    /* add function implementation here */
+func beginsWithVowel(singleString:String) -> Bool {
+    if singleString == "" {
+        return false
+    }
+    
+    let lowerCaseString = singleString.lowercased()
+    print(lowerCaseString)
+    let lowerCaseStringFirstLetter = lowerCaseString.characters[lowerCaseString.startIndex]
+    print(lowerCaseStringFirstLetter)
+    if lowerCaseStringFirstLetter == "a" || lowerCaseStringFirstLetter == "e" || lowerCaseStringFirstLetter == "i" || lowerCaseStringFirstLetter == "o" || lowerCaseStringFirstLetter == "u"  {
+        return true
+    } else {
+        return false
+    }
 }
+
+beginsWithVowel(singleString: "Apples") // true
+beginsWithVowel(singleString: "pIG") // false
+beginsWithVowel(singleString: "oink") // true
+beginsWithVowel(singleString: "udacity") // true
+beginsWithVowel(singleString: "") // false
 
 /* Example Function Call
  
