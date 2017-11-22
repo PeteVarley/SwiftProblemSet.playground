@@ -63,9 +63,9 @@ func beginsWithVowel(singleString:String) -> Bool {
     }
     
     let lowerCaseString = singleString.lowercased()
-    print(lowerCaseString)
+    
     let lowerCaseStringFirstLetter = lowerCaseString.characters[lowerCaseString.startIndex]
-    print(lowerCaseStringFirstLetter)
+    
     if lowerCaseStringFirstLetter == "a" || lowerCaseStringFirstLetter == "e" || lowerCaseStringFirstLetter == "i" || lowerCaseStringFirstLetter == "o" || lowerCaseStringFirstLetter == "u"  {
         return true
     } else {
@@ -100,9 +100,24 @@ beginsWithVowel(singleString: "") // false
  
  **Hint**: Re-use the `beginsWithVowel` function.
  */
-func funWithWords(/* add parameters here */) /* define the return type */ {
-    /* add function implementation here */
+func funWithWords(singleString:String) -> String {
+    if beginsWithVowel(singleString: singleString) == true {
+        var wordWithVowel = singleString.uppercased()
+        
+        return(wordWithVowel)
+    } else {
+        var wordWithoutVowel = singleString.lowercased()
+        
+        return wordWithoutVowel
+    }
+
 }
+
+funWithWords(singleString: "Apples") == "APPLES"
+funWithWords(singleString: "pIG") == "pig"
+funWithWords(singleString: "oink") == "OINK"
+funWithWords(singleString: "udacity") == "UDACITY"
+funWithWords(singleString: "") == ""
 
 /* Example Function Call
  
